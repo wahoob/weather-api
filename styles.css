@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", system-ui;
+  background-color: #b5d6d6;
+  position: relative;
+  min-height: 137vh;
+  display: flex;
+}
+
+.rains {
+  position: absolute;
+  top: 69px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clouds {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  min-width: 100%;
+}
+
+.clouds > img {
+  width: 100%;
+}
+
+.rainy-girl {
+  position: absolute;
+  top: 271px;
+  left: 50%;
+  transform: translate(-50%, 00%);
+}
+
+.today-temp {
+  position: absolute;
+  top: 9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+}
+
+.today-temp .day-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.today-temp > h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.day-name {
+  position: absolute;
+  top: 30rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.day-name > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: white;
+  align-self: flex-end;
+  z-index: 99;
+  min-width: 100%;
+  border-radius: 60px 60px 0px 0px;
+  padding: 2.5rem 3rem 6rem 3rem;
+}
+
+.days-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.days-desc > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.days-desc .current {
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+
+.days-desc .current .point {
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 22px 28px 22px;
+  border-radius: 44px;
+  border: 1px solid #b5d6d6;
+  background-color: #e5f2f2;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.day .temp {
+  font-size: 16px;
+}
+
+.today {
+  background-color: #fee68b;
+  border-color: #fbdc64;
+  transform: translateY(-20px);
+}
